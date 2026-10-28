@@ -1,0 +1,204 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>유행운 | AX · 업무 혁신</title>
+<meta name="description" content="현장의 반복 업무를 찾아 AI로 줄이는 사람, 유행운의 이력서">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css">
+<style>
+  :root {
+    --bg: #ffffff;
+    --text: #1a1a1a;
+    --muted: #6b6b6b;
+    --line: #ececec;
+    --soft: #f7f7f8;
+    --accent: #2f6bff;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    background: var(--bg);
+    color: var(--text);
+    font-family: "Pretendard", -apple-system, "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+    line-height: 1.7;
+    word-break: keep-all;
+  }
+  main { max-width: 760px; margin: 0 auto; padding: 72px 20px 96px; }
+  section { padding: 40px 0; border-top: 1px solid var(--line); }
+  h2 {
+    font-size: 13px; font-weight: 700; letter-spacing: .12em;
+    color: var(--accent); text-transform: uppercase; margin-bottom: 20px;
+  }
+  h3 { font-size: 18px; font-weight: 700; }
+  p, li { font-size: 15.5px; }
+  .muted { color: var(--muted); font-size: 14px; }
+
+  /* 상단 소개 */
+  .hero { padding-bottom: 48px; }
+  .hero .role { font-size: 14px; font-weight: 600; color: var(--accent); }
+  .hero h1 { font-size: 40px; font-weight: 800; margin: 6px 0 12px; }
+  .hero .tagline { font-size: 20px; font-weight: 600; margin-bottom: 20px; }
+  .hero .contact { display: flex; flex-wrap: wrap; gap: 8px 20px; }
+  .hero .contact a { color: var(--muted); font-size: 14px; text-decoration: none; }
+  .hero .contact a:hover { color: var(--accent); }
+
+  /* 숫자 강조 카드 */
+  .stats { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; margin-top: 24px; }
+  .stat { background: var(--soft); border-radius: 12px; padding: 18px 16px; }
+  .stat b { display: block; font-size: 22px; font-weight: 800; }
+  .stat span { font-size: 13px; color: var(--muted); }
+
+  /* 역량 */
+  .skills { display: grid; gap: 14px; }
+  .skill { display: grid; grid-template-columns: 170px 1fr; gap: 16px; }
+  .skill dt { font-weight: 700; font-size: 15px; }
+  .skill dd { font-size: 15px; }
+  .tag {
+    display: inline-block; font-size: 11.5px; font-weight: 600; color: var(--muted);
+    border: 1px solid var(--line); border-radius: 999px; padding: 0 8px; margin-left: 6px;
+  }
+
+  /* 경력·프로젝트 */
+  .item + .item { margin-top: 32px; }
+  .item-head { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; flex-wrap: wrap; }
+  .item ul { margin-top: 12px; padding-left: 18px; }
+  .item li + li { margin-top: 8px; }
+  .item li b { font-weight: 700; }
+
+  /* 기술 칩 */
+  .chips { display: flex; flex-wrap: wrap; gap: 8px; }
+  .chip { background: var(--soft); border-radius: 8px; padding: 4px 10px; font-size: 13.5px; }
+  .chip-group + .chip-group { margin-top: 16px; }
+  .chip-group p { font-size: 13px; color: var(--muted); margin-bottom: 8px; }
+
+  /* 자격증 */
+  .certs li { list-style: none; display: flex; gap: 16px; }
+  .certs li + li { margin-top: 6px; }
+  .certs .date { color: var(--muted); min-width: 70px; font-size: 14px; }
+
+  footer { text-align: center; color: var(--muted); font-size: 12.5px; padding-top: 40px; }
+
+  @media (max-width: 600px) {
+    main { padding: 48px 16px 72px; }
+    .hero h1 { font-size: 32px; }
+    .hero .tagline { font-size: 17px; }
+    .stats { grid-template-columns: 1fr; }
+    .skill { grid-template-columns: 1fr; gap: 2px; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header class="hero">
+    <p class="role">AX · 업무 혁신</p>
+    <h1>유행운</h1>
+    <p class="tagline">현장의 반복 업무를 찾아 AI로 줄이는 사람</p>
+    <div class="contact">
+      <!-- 실제 연락처로 바꿔 주세요 -->
+      <a href="mailto:[이메일]">✉ [이메일]</a>
+      <a href="https://github.com/happyhippo-cmd">GitHub</a>
+    </div>
+
+    <div class="stats">
+      <div class="stat"><b>3년 7개월</b><span>물류 스타트업 CX</span></div>
+      <div class="stat"><b>월 15~20시간 → 0</b><span>영수증 문의 처리 시간</span></div>
+      <div class="stat"><b>10~20건</b><span>반복 문의 기능 개선</span></div>
+    </div>
+  </header>
+
+  <section>
+    <h2>About</h2>
+    <p>물류 스타트업 CX팀에서 3년 7개월 동안 고객 문의를 분석해 반복되는 문의의 원인을 찾고, 개발팀에 기능 개선을 제안해 문의 자체를 줄이는 일을 했습니다. 반복 업무는 응대를 잘할 때가 아니라 구조를 바꿀 때 사라진다는 것을 배웠습니다.</p>
+    <p style="margin-top:12px">이후 AI 부트캠프 최종 프로젝트에서 LLM으로 데이터 태깅·번역·검수를 매일 자동 처리하는 파이프라인과 LangGraph 추천 에이전트를 Claude Code로 직접 만들어 배포까지 마쳤습니다.</p>
+  </section>
+
+  <section>
+    <h2>Strengths</h2>
+    <dl class="skills">
+      <div class="skill"><dt>반복 업무 발굴</dt><dd>자주 오는 문의를 목록으로 만들고 문의량과 개발 난이도로 우선순위를 정해 10~20건을 기능으로 개선<span class="tag">CX</span></dd></div>
+      <div class="skill"><dt>생성형 AI · Agent</dt><dd>OpenAI API로 태그·요약·3개 국어 번역을 붙이는 파이프라인, LangGraph로 키워드·벡터 검색을 결합한 추천 에이전트 구현<span class="tag">K-Dive</span></dd></div>
+      <div class="skill"><dt>업무 자동화</dt><dd>Airflow로 수집 → 적재 → LLM 보강 → 벡터 적재 → 결과 알림까지 매일 자동 실행<span class="tag">K-Dive</span></dd></div>
+      <div class="skill"><dt>협업 · 조율</dt><dd>처리 시간이라는 근거로 개발팀을 설득하고, 문의 데이터를 매주 MD팀에 공유해 거래처 교체·입고 검수 강화로 연결<span class="tag">CX</span></dd></div>
+    </dl>
+  </section>
+
+  <section>
+    <h2>Project</h2>
+    <div class="item">
+      <div class="item-head">
+        <h3>K-Dive · 외국인 관광객을 위한 K-컬처 추천 서비스</h3>
+        <span class="muted">약 2개월 · 5인 팀</span>
+      </div>
+      <p class="muted">SK네트웍스 Family AI 캠프 최종 프로젝트 · 담당: 전시·팝업 추천 에이전트, 데이터 보강 자동화, 모니터링·배포</p>
+      <ul>
+        <li><b>태깅·번역 자동화</b> 매일 수집되는 행사 정보에 LLM이 장르·분위기 태그, 검색용 요약, 영어·일본어·중국어 번역을 붙이도록 자동화</li>
+        <li><b>추천 에이전트</b> LangGraph로 '질문 이해 → 키워드·벡터 검색 → 추천 이유 작성' 흐름을 만들고, 질문한 언어(4개 국어)로 답변</li>
+        <li><b>AI 결과 검증</b> 번역에 한글이 남거나 추천에 다른 장르가 섞이는 문제를 찾아 검사 규칙과 장르 필터를 추가</li>
+        <li><b>배포·모니터링</b> AWS EC2 배포, Prometheus·Grafana로 서버 상태를 보고 이상 시 Discord로 자동 알림</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Experience</h2>
+    <div class="item">
+      <div class="item-head">
+        <h3>주식회사딜리버리랩 · CX</h3>
+        <span class="muted">2021.12 ~ 2025.07</span>
+      </div>
+      <ul>
+        <li><b>반복 문의 개선</b> 월 30~40건, 건당 30분이 걸리던 영수증 요청을 시간으로 계산해 개발팀을 설득. 앱 내 다운로드 기능 출시 후 1~2달 안내를 거쳐 관련 문의 0건</li>
+        <li><b>셀프 해결 환경</b> 채널톡 기능으로 자주 묻는 질문 페이지를 만들어 고객이 단순 문의를 스스로 해결하도록 개선</li>
+        <li><b>문의 데이터 공유</b> 문의를 품질·배송·서비스로 나눠 매주 공유, MD팀의 상품·거래처 교체와 물류센터 교육자료로 연결</li>
+        <li><b>장애 대응</b> 앱 장애로 100건 이상 문의가 몰린 날 우선순위를 정해 응대하고 개발팀과 원인 파악</li>
+      </ul>
+    </div>
+    <div class="item">
+      <div class="item-head">
+        <h3>엘티디씨유한회사 · 고객 응대 및 운영 관리</h3>
+        <span class="muted">2018.03 ~ 2018.11</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Skills &amp; AI Tools</h2>
+    <div class="chip-group">
+      <p>AI 툴</p>
+      <div class="chips">
+        <span class="chip">Claude Code · 코드 작업</span>
+        <span class="chip">ChatGPT · PPT·이미지 제작</span>
+        <span class="chip">문서 요약 · 파일·엑셀 정리</span>
+      </div>
+    </div>
+    <div class="chip-group">
+      <p>직접 구현</p>
+      <div class="chips">
+        <span class="chip">Python</span><span class="chip">SQL</span><span class="chip">LangGraph</span>
+        <span class="chip">OpenAI API</span><span class="chip">ChromaDB</span><span class="chip">Airflow</span>
+        <span class="chip">AWS EC2</span><span class="chip">Prometheus · Grafana</span>
+      </div>
+    </div>
+    <div class="chip-group">
+      <p>협업</p>
+      <div class="chips">
+        <span class="chip">Git · GitHub</span><span class="chip">Slack</span><span class="chip">Excel</span><span class="chip">Discord</span>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Certificates &amp; Education</h2>
+    <ul class="certs">
+      <li><span class="date">2026.03</span>데이터분석 준전문가(ADsP)</li>
+      <li><span class="date">2025.12</span>SMAT(서비스경영자격) 1급</li>
+      <li><span class="date">2025.06</span>SQL 개발자(SQLD)</li>
+      <li><span class="date">교육</span>SK네트웍스 Family AI 캠프 (Python, 데이터 처리, LLM·AI 서비스 개발)</li>
+    </ul>
+  </section>
+
+  <footer>이 페이지는 Claude로 기획·제작했습니다.</footer>
+</main>
+</body>
+</html>
